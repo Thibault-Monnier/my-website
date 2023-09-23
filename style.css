@@ -23,7 +23,8 @@ p {
     padding: 1.5rem 0;
     padding-bottom: 2.5rem;
 
-    background-color: #d5e5e5;
+    background-color: #6aa84f;
+    color: #fff;
 }
 
 .title {
@@ -39,17 +40,17 @@ p {
     margin-top: 1.5rem;
 }
 
-.language-button img {
-    width: 1.25rem;
-    height: 1.25rem;
+.language-icon svg {
+    width: 2rem;
+    height: 2rem;
 }
 
 .language-name {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .site-in-development {
-    font-size: 0.7rem;
-    color: #999;
+    font-size: 1rem;
+    color: #fff;
 }
