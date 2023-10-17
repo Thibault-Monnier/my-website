@@ -71,3 +71,10 @@ body {
     width: 2rem;
     height: 2rem;
 }
+
+.upcoming-feature {
+    font-style: italic;
+    color: #a5a5a5;
+
+    font-weight: 500;
+}
