@@ -1,4 +1,4 @@
-# My Website
+## My Website
 
 This is my personal website on which I put all my projects (work-in-progress).
 
