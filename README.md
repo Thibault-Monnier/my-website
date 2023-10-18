@@ -1,3 +1,4 @@
-# Greatest Site
+# My Website
 
-The best website on which I put all my projects.
+This is my personal website (work-in-progress) on which I will put all my projects.
+See it now: (My Wesite)[https://thibault-website.netlify.app/]
