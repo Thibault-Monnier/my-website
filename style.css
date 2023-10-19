@@ -5,16 +5,16 @@ body {
     min-height: 100vh;
     min-width: 320px;
 
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .header {
     position: relative;
 
-    padding: 7rem 0;
+    padding: 7rem 3rem;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
 
     background-color: #171850;
     color: #fff;
@@ -24,6 +24,10 @@ body {
     text-align: center;
     font-size: 5.5em;
     font-weight: 700;
+
+    @media (max-width: 600px) {
+        font-size: 4.5em;
+    }
 }
 
 .language-selector a:link,
@@ -55,7 +59,7 @@ body {
     visibility: hidden;
     margin-right: 0.5rem;
     content: '·';
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     line-height: 0.5;
 }
 
@@ -73,8 +77,73 @@ body {
 }
 
 .upcoming-feature {
-    font-style: italic;
     color: #a5a5a5;
 
     font-weight: 500;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    padding: 5rem 10rem;
+}
+
+.content-about-me {
+    padding: 2rem;
+    max-width: 60rem;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3.5rem;
+
+    background-color: #999;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 10px 10px #000 !important;
+}
+
+.content-about-me:hover {
+    background-color: #171850;
+    color: #fff;
+}
+
+.content-about-me:hover h3 {
+    color: #fff;
+}
+
+.content-about-me:hover .content-avatar {
+    border-color: #000;
+    animation: rotate-y 1s ease-in-out 1;
+}
+
+.content-information h3 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #171850;
+}
+
+.content-information p {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.content-information p:last-child {
+    margin-bottom: 0;
+}
+
+.content-avatar {
+    height: 10rem;
+    border-radius: 50%;
+    border: 0.3rem solid #171850;
+}
+
+@keyframes rotate-y {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
 }
