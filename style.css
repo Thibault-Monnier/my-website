@@ -8,16 +8,26 @@ body {
     background-color: #ffffff;
 }
 
-.header {
-    position: relative;
-
-    padding: 7rem 3rem;
-    display: flex;
+.header,
+.header-container {
     flex-direction: column;
     gap: 3rem;
 
     background-color: #171850;
     color: #fff;
+}
+
+.header {
+    padding: 7rem 3rem;
+
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title {
@@ -74,6 +84,32 @@ body {
 .language-icon svg {
     width: 2rem;
     height: 2rem;
+}
+
+.magnifying-glass {
+    position: absolute;
+    top: 4rem;
+    bottom: 4rem;
+    right: 4rem;
+}
+
+.magnifying-glass svg {
+    height: 100%;
+
+    transform-origin: 75% 50%;
+    transform: rotate(-15deg);
+}
+
+.magnifying-glass-image {
+    position: absolute;
+    top: 5%;
+    right: 2.5%;
+    height: 90%;
+
+    border-radius: 50%;
+
+    user-select: none;
+    -webkit-user-drag: none; /* Chrome, Safari, Opera, Edge */
 }
 
 .upcoming-feature {
@@ -144,6 +180,10 @@ body {
 }
 
 @keyframes rotate-y {
-    from {transform: rotateY(0deg);}
-    to {transform: rotateY(180deg);}
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
 }
