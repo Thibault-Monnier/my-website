@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     min-width: 320px;
 
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .header,
@@ -109,7 +109,8 @@ body {
     border-radius: 50%;
 
     user-select: none;
-    -webkit-user-drag: none; /* Chrome, Safari, Opera, Edge */
+    -webkit-user-drag: none;
+    /* Chrome, Safari, Opera, Edge */
 }
 
 .upcoming-feature {
@@ -125,15 +126,15 @@ body {
     gap: 5rem;
 
     padding: 5rem 10rem;
+
+    @media (max-width: 840px) {
+        padding: 5rem 5rem;
+    }
 }
 
-.content-about-me {
+.content-box {
     padding: 2rem;
     max-width: 60rem;
-
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 3.5rem;
 
     background-color: #999;
     cursor: pointer;
@@ -141,18 +142,31 @@ body {
     box-shadow: 10px 10px #000 !important;
 }
 
-.content-about-me:hover {
+.content-box:hover {
     background-color: #171850;
     color: #fff;
 }
 
-.content-about-me:hover h3 {
+.content-box:hover h3 {
     color: #fff;
 }
 
-.content-about-me:hover .content-avatar {
-    border-color: #000;
-    animation: rotate-y 1s ease-in-out 1;
+.content-left {
+    text-align: left;
+
+    .content-image {
+        float: right;
+        margin: 0 0 1.5rem 1.5rem;
+    }
+}
+
+.content-right {
+    text-align: right;
+
+    .content-image {
+        float: left;
+        margin: 0 1.5rem 1.5rem 0;
+    }
 }
 
 .content-information h3 {
@@ -173,16 +187,32 @@ body {
     margin-bottom: 0;
 }
 
-.content-avatar {
+.content-image {
     height: 10rem;
+    width: 10rem;
     border-radius: 50%;
     border: 0.3rem solid #171850;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.content-about-me:hover .content-about-me-image {
+    border-color: #000;
+    animation: rotate-y 1s ease-in-out 1;
+}
+
+.content-my-projects:hover .content-my-projects-image {
+    border-color: #000;
+    animation: rotate-y 1s ease-in-out 1;
 }
 
 @keyframes rotate-y {
     from {
         transform: rotateY(0deg);
     }
+
     to {
         transform: rotateY(180deg);
     }
