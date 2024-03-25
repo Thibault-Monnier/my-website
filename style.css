@@ -11,16 +11,24 @@ body {
 .header,
 .header-container {
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 
     background-color: #171850;
     color: #fff;
+
+    @media (min-width: 640px) {
+        gap: 4rem;
+    }
 }
 
 .header {
-    padding: 9rem 3rem;
+    padding: 7rem 2rem;
 
     position: relative;
+
+    @media (min-width: 640px) {
+        padding: 9rem 3rem;
+    }
 }
 
 .header-container {
@@ -45,8 +53,12 @@ body {
     align-items: center;
     justify-content: center;
 
-    gap: 3rem;
+    gap: 2rem;
     z-index: 1;
+
+    @media (min-width: 640px) {
+        gap: 3rem;
+    }
 }
 
 .language-selector a:link,
